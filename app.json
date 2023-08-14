@@ -1,8 +1,6 @@
 {
-   "stack": "heroku-20"
-}
-{
-  "name": "Adarsh-",
+  "stack": "heroku-20"
+  "name": "jade-",
   "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
   "keywords": [
       "telegram",
@@ -16,10 +14,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/shallow090/jade/",
+  "repository": "https://github.com/shallow090/jade1/",
   "success_url": "/",
   "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://adarsh.eu.org",
+  "website": "http://jade.eu.org",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
