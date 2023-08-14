@@ -1,6 +1,9 @@
 {
-  "name": "jade-",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. ",
+   "stack": "heroku-20"
+}
+{
+  "name": "Adarsh-",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
   "keywords": [
       "telegram",
       "stream",
@@ -16,7 +19,7 @@
   "repository": "https://github.com/shallow090/jade/",
   "success_url": "/",
   "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://jade.eu.org",
+  "website": "http://adarsh.eu.org",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
@@ -55,7 +58,7 @@
           
       },
       "OWNER_USERNAME": {
-          "description": "Enter your username without @  example  jade."
+          "description": "Enter your username without @  example  adarsh."
       },
       "SLEEP_THRESHOLD": {
           "description": "Floodwait Sleep timer. Read the readme for more info about this var",
@@ -94,7 +97,7 @@
           "required": false
       },
       "name": {
-          "description": " Session Name for Bot [ Add jade]",
+          "description": " Session Name for Bot [ Add adarsh-goel]",
           "value": "File-To-Link",
           "required": false
       }
@@ -108,7 +111,4 @@
           "size": "free"
       }
   }
-}
-{
-   "stack": "heroku-20"
 }
