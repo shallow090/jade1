@@ -1,4 +1,7 @@
 {
+   "stack": "heroku-20"
+}
+{
   "name": "jade-",
   "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
   "keywords": [
