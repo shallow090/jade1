@@ -69,8 +69,8 @@ async def private_receive_handler(c: Client, m: Message):
             return
     try:
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(str(get_name(log_msg)))}?hash={quote_plus(str(get_hash(log_msg)))}"
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(str(get_name(log_msg)))}?hash={quote_plus(str(get_hash(log_msg)))}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
         msg_text ="""<u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !🔻</u>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>🌐 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b> ▶ WATCH  :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ :ʟɪɴᴋ ᴡᴏɴ'ᴛ ᴇxᴘɪʀᴇ ᴜɴᴛɪʟʟ ʙᴏᴛ ɪꜱ ᴀᴄᴛɪᴠᴇ </b>"""
 
@@ -106,8 +106,8 @@ async def channel_receive_handler(bot, broadcast):
         return
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(str(get_name(log_msg)))}?hash={quote_plus(str(get_hash(log_msg)))}"
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(str(get_name(log_msg)))}?hash={quote_plus(str(get_hash(log_msg)))}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         await log_msg.reply_text(
             text=f"**Channel Name:** `{broadcast.chat.title}`\n**CHANNEL ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream_link}",
             quote=True
