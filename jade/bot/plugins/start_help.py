@@ -76,7 +76,7 @@ async def start(b, m):
     await StreamBot.send_photo(
         chat_id=m.chat.id,
         photo ="https://telegra.ph/file/ffcdb123f45306bd10892.png",
-        caption =f'🇭‌🇪‌🇾‌ {m.from_user.mention(style="md")}!,\nɪ ᴀᴍ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.\nꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇᴛᴜʀɴ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ/ꜱᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.',
+        caption =f'𝐇𝐞𝐲  {m.from_user.mention(style="md")}🖐!,\nɪ ᴀᴍ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜰɪʟᴇ ᴛᴏ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.\nꜱᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇᴛᴜʀɴ ᴀ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ/ꜱᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.',
         reply_markup=buttonz)
 
 
