@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy to Cloudflare Workers
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Publish
         uses: cloudflare/wrangler-action@1.2.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          secrets: |
-            BOT_TOKEN
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
