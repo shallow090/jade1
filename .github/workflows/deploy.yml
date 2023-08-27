@@ -6,13 +6,21 @@ on:
       - master
 
 jobs:
-  deploy:
+  initial:
     runs-on: ubuntu-latest
-    name: Deploy to Cloudflare Workers
+    name: Initial Job
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      # You can add more steps if needed
 
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Cloudflare Workers
+    needs: initial
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Publish
         uses: cloudflare/wrangler-action@1.2.0
         with:
